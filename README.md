@@ -17,7 +17,7 @@
 - [ ] Du skal til opgaven bruge front-end frameworket Vue.js.
 - [ ] Du skal lave din styling selv og/eller bruge tailwindcss.
 - [ ] Selvom designet er til mobil, så skal siden stadig se godt ud på tablets og PC.
-- [ ] Du skal til eksamen kunne redegøre for:
+      **Du skal til eksamen kunne redegøre for:**
 - [ ] Hvordan du praktisk har anvendt et front-end framework til at opstille sidens layout og forskellige komponenter.
 - [ ] Hvordan og hvorfor du har lavet forskellige JavaScript klasser og metoder.
 - [ ] Eventuel opdeling af din kode i genanvendelige dele. Det er ikke et krav men du skal vise, at du har taget aktive valg ift. hvordan din kode er opdelt.
