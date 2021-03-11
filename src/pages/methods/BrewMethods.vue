@@ -10,5 +10,7 @@
     <ul>
       LIST OF NEW RECIPES
     </ul>
+
+    <router-link to="/home-brew"></router-link>
   </section>
 </template>

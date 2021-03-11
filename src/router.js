@@ -17,16 +17,11 @@ const router = createRouter({
         { path: '/home-brew', component: LatestBrews},
         // List of brews
         { path: '/pick-coffee', component: BrewsList, children: {
-            // List of brew methods
-            path: '/pick-coffee/brew-method',
-                component: BrewMethods, 
-            children: {
-                // Recipe with steps
-                path: '/pick-coffee/brew-method/:id', 
-                component: Recipe
-            },
+                path: '/pick-coffee/:id/brew-methods',
+                component: BrewMethods
+            }
         },
-    },
+        { path: '/recipe/:id', component: Recipe },
         { path: '/:notFound(.*)', component: NotFound}
     ],
 });
