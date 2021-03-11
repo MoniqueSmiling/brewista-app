@@ -1,18 +1,19 @@
 import { createApp } from 'vue';
-// import { createStore } from 'vuex';
 
-import App from './App.vue';
+
 import router from './router.js';
+import store from './store/index.js';
+import App from './App.vue';
 
-// const store = createStore({
-//     state() {
-//         return {
-//             text: 'Hi, I am working!'
-//         };
-//     }
-// });
+// Import Components
+import BaseCard from './components/ui/BaseCard.vue';
+
 const app = createApp(App);
 
 app.use(router);
-// app.use(store);
+app.use(store);
+
+// Register component
+app.component('base-card', BaseCard);
+
 app.mount('#app');

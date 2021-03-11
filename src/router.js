@@ -16,11 +16,8 @@ const router = createRouter({
         { path: '/', redirect: '/home-brew'},
         { path: '/home-brew', component: LatestBrews},
         // List of brews
-        { path: '/pick-coffee', component: BrewsList, children: {
-                path: '/pick-coffee/:id/brew-methods',
-                component: BrewMethods
-            }
-        },
+        { path: '/pick-coffee', component: BrewsList},
+        { path: '/pick-coffee/:id/brew-methods', component: BrewMethods},
         { path: '/recipe/:id', component: Recipe },
         { path: '/:notFound(.*)', component: NotFound}
     ],
